@@ -51,4 +51,4 @@ top_level = true
 linear_damp = 1.096
 
 [node name="cactus" parent="." instance=ExtResource("3_cybqn")]
-transform = Transform3D(5.51475, 0, 0, 0, 6.077, 0, 0, 0, 5.35046, 1.50513, -4.76837e-07, 9.67862)
+transform = Transform3D(5.51475, 0, 0, 0, 6.077, 0, 0, 0, 5.35046, 1.50513, -4.76837e-07, -12.476)
