@@ -43,6 +43,10 @@ move_right={
 ]
 }
 
+[physics]
+
+common/physics_ticks_per_second=144
+
 [rendering]
 
 lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3

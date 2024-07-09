@@ -58,6 +58,8 @@ var pitch_input := 0.0
 	#
 
 func _ready() -> void:
+	Engine.physics_jitter_fix = 0.0
+
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 # movement
@@ -77,7 +79,6 @@ func _process(delta: float) -> void:
 		deg_to_rad(-90),
 		deg_to_rad(90)
 	)		
-	
 	twist_input = 0.0
 	pitch_input = 0.0
 	
