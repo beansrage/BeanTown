@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://c2wbfsxtp5vk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tklrd"]
+bg_color = Color(0.513726, 0.0156863, 0.317647, 1)
+
+[sub_resource type="Theme" id="Theme_4lb3g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dmdyh"]
+bg_color = Color(0.105258, 0.252623, 0.515332, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrly5"]
+bg_color = Color(0.459367, 0.459399, 0.0179624, 1)
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -41.0
+offset_right = 305.0
+grow_vertical = 0
+color = Color(0.00704254, 0, 0.000993481, 1)
+
+[node name="health" type="ProgressBar" parent="."]
+anchors_preset = -1
+anchor_left = 0.008
+anchor_top = 0.984
+anchor_right = 0.008
+anchor_bottom = 0.984
+offset_left = 9.64
+offset_top = -21.72
+offset_right = 284.64
+offset_bottom = -13.72
+grow_vertical = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_tklrd")
+show_percentage = false
+
+[node name="stamina" type="ProgressBar" parent="."]
+anchors_preset = -1
+anchor_left = 0.008
+anchor_top = 0.984
+anchor_right = 0.008
+anchor_bottom = 0.984
+offset_left = 9.64
+offset_top = -9.71997
+offset_right = 284.64
+offset_bottom = -1.71997
+grow_vertical = 0
+theme = SubResource("Theme_4lb3g")
+theme_override_styles/background = SubResource("StyleBoxFlat_dmdyh")
+show_percentage = false
+
+[node name="level" type="ProgressBar" parent="."]
+anchors_preset = -1
+anchor_left = 0.008
+anchor_top = 0.984
+anchor_right = 0.008
+anchor_bottom = 0.984
+offset_left = 9.64
+offset_top = 3.28003
+offset_right = 284.64
+offset_bottom = 11.28
+grow_vertical = 0
+theme = SubResource("Theme_4lb3g")
+theme_override_styles/background = SubResource("StyleBoxFlat_rrly5")
+show_percentage = false

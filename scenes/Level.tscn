@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://u4fxyr5jeayi"]
+[gd_scene load_steps=9 format=3 uid="uid://u4fxyr5jeayi"]
 
-[ext_resource type="PackedScene" uid="uid://dxv5h60kbox7e" path="res://player.tscn" id="1_y1qh2"]
+[ext_resource type="PackedScene" uid="uid://dxv5h60kbox7e" path="res://scenes/player.tscn" id="1_1myw4"]
+[ext_resource type="PackedScene" uid="uid://c2wbfsxtp5vk" path="res://scenes/ui.tscn" id="2_xh5qx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ujt0c"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -24,7 +25,7 @@ albedo_color = Color(0.0175481, 0.221191, 0.0900769, 1)
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_grxy8"]
 data = PackedVector3Array(20, 0, 20, -20, 0, 20, 20, 0, -20, -20, 0, 20, -20, 0, -20, 20, 0, -20)
 
-[node name="Node3D" type="Node3D"]
+[node name="Level" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_0nu2u")
@@ -43,6 +44,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_4qoo7")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="whiteBoxGround/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_grxy8")
 
-[node name="Player" parent="." instance=ExtResource("1_y1qh2")]
+[node name="Player" parent="." instance=ExtResource("1_1myw4")]
 top_level = true
 linear_damp = 1.096
+
+[node name="UI" parent="." instance=ExtResource("2_xh5qx")]
