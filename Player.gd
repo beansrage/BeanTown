@@ -25,9 +25,14 @@ func _ready() -> void:
 	# Picks up mouse movement
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
+# method that that handles health change
 func change_health(amount: int):
 	health += amount
 	health = clamp(health, 0, max_health) # ensures health does not deviate 
+	
+	
+# Ref to progress bar 
+@onready var health_bar = ""
 
 func print_attributes():
 	print("Health: ", health)

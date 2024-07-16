@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://u4fxyr5jeayi"]
+[gd_scene load_steps=13 format=3 uid="uid://u4fxyr5jeayi"]
 
 [ext_resource type="PackedScene" uid="uid://dxv5h60kbox7e" path="res://scenes/player.tscn" id="1_1myw4"]
+[ext_resource type="PackedScene" uid="uid://djk7ql04rw3he" path="res://scenes/healthBar.tscn" id="2_5ktmq"]
 [ext_resource type="PackedScene" uid="uid://c2wbfsxtp5vk" path="res://scenes/ui.tscn" id="2_xh5qx"]
 [ext_resource type="PackedScene" uid="uid://do761ec5bpmul" path="res://assets/Cactus.fbx" id="3_cybqn"]
 [ext_resource type="PackedScene" uid="uid://df0pjsd6m4aep" path="res://assets/LPHorror_WitchHut.fbx" id="4_0q2ap"]
@@ -32,6 +33,8 @@ data = PackedVector3Array(40, 0, 40, -40, 0, 40, 40, 0, -40, -40, 0, 40, -40, 0,
 [node name="Level" type="Node3D"]
 
 [node name="UI" parent="." instance=ExtResource("2_xh5qx")]
+
+[node name="HealthBar" parent="UI" instance=ExtResource("2_5ktmq")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_0nu2u")
