@@ -1,9 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://u4fxyr5jeayi"]
+[gd_scene load_steps=11 format=3 uid="uid://u4fxyr5jeayi"]
 
 [ext_resource type="PackedScene" uid="uid://dxv5h60kbox7e" path="res://scenes/player.tscn" id="1_1myw4"]
 [ext_resource type="PackedScene" uid="uid://c2wbfsxtp5vk" path="res://scenes/ui.tscn" id="2_xh5qx"]
 [ext_resource type="PackedScene" uid="uid://do761ec5bpmul" path="res://assets/Cactus.fbx" id="3_cybqn"]
-[ext_resource type="PackedScene" uid="uid://df0pjsd6m4aep" path="res://assets/LPHorror_WitchHut.fbx" id="4_0q2ap"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ujt0c"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -56,6 +55,3 @@ linear_damp = 1.096
 [node name="cactus" parent="." instance=ExtResource("3_cybqn")]
 transform = Transform3D(5.51475, 0, 0, 0, 6.077, 0, 0, 0, 5.35046, 1.50513, -4.76837e-07, -12.476)
 script = SubResource("GDScript_fg3n4")
-
-[node name="hut" parent="." instance=ExtResource("4_0q2ap")]
-transform = Transform3D(-0.768062, 0, -1.92134, 0, 2.02593, 0, 1.43736, 0, -1.02667, 8.05316, 0.16111, 0)
